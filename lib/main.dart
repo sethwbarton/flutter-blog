@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'pages/landing_page.dart';
 import 'util/size_config.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 
 void main() {
   runApp(MyApp());

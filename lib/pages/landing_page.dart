@@ -1,64 +1,51 @@
 import 'package:flutter/material.dart';
+
 import '../util/size_config.dart';
+import '../widgets/footer.dart';
+import '../widgets/action_button.dart';
+import '../widgets/post_list.dart';
 
 class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      bottomNavigationBar: Footer(),
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Color(0xff1c1c1c),
-        leading: FlatButton(
-          onPressed: () {},
-          child: Text(
-            'SWB',
-            style: TextStyle(
-              fontFamily: 'Mulish',
-              fontWeight: FontWeight.w100,
-              color: Colors.white,
-            ),
-          ),
-        ),
+        leading: ActionButton('SWB'),
         actions: [
-          FlatButton(
-            onPressed: () {},
-            child: Text(
-              'HOME',
-              style: TextStyle(
-                  fontFamily: 'Mulish',
-                  fontWeight: FontWeight.w100,
-                  color: Colors.white),
-            ),
-          ),
-          FlatButton(
-            onPressed: () {},
-            child: Text(
-              'ABOUT ME',
-              style: TextStyle(
-                  fontFamily: 'Mulish',
-                  fontWeight: FontWeight.w100,
-                  color: Colors.white),
-            ),
-          ),
+          ActionButton('HOME'),
+          ActionButton('BLOG'),
+          ActionButton('ABOUT ME'),
         ],
       ),
       backgroundColor: Color(0xffffffff),
-      body: Column(
-        children: [
-          SizedBox(
-            height: 20,
-          ),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset('seth_logo.png'),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 20,
             ),
-          ),
-          Expanded(
-            flex: 10,
-            child: Image.asset('1984-Macintosh.png'),
-          ),
-        ],
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset('seth_logo.png'),
+              ),
+            ),
+            Container(
+              width: SizeConfig.blockSizeHorizontal * 60,
+              height: SizeConfig.blockSizeVertical * 45,
+              child: Image.asset('1984-Macintosh.png'),
+            ),
+            Container(
+              width: SizeConfig.blockSizeHorizontal * 80,
+              height: SizeConfig.blockSizeVertical * 80,
+              child: PostList(),
+            )
+          ],
+        ),
       ),
     );
   }

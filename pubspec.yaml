@@ -32,6 +32,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_markdown: ^0.4.4
+  url_launcher: ^5.7.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -48,6 +50,8 @@ flutter:
     - web/assets/seth_logo.png
     - web/assets/X-15_Analog_computer.jpg
     - web/assets/1984-Macintosh.png
+    - web/assets/posts/about_me.md
+    - web/assets/posts/simple_post.md
   fonts:
    - family: Mulish
      fonts:
@@ -57,6 +61,9 @@ flutter:
          weight: 200
        - asset: web/assets/fonts/Mulish-Bold.ttf
          weight: 300
+   - family:  CustomIcons
+     fonts:
+       - asset: web/assets/fonts/CustomIcons.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
