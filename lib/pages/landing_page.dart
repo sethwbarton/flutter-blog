@@ -6,66 +6,49 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xff1c1c1c),
+        leading: FlatButton(
+          onPressed: () {},
+          child: Text(
+            'SWB',
+            style: TextStyle(
+              fontFamily: 'Mulish',
+              fontWeight: FontWeight.w100,
+              color: Colors.white,
+            ),
+          ),
+        ),
+        actions: [
+          FlatButton(
+            onPressed: () {},
+            child: Text(
+              'HOME',
+              style: TextStyle(
+                  fontFamily: 'Mulish',
+                  fontWeight: FontWeight.w100,
+                  color: Colors.white),
+            ),
+          ),
+          FlatButton(
+            onPressed: () {},
+            child: Text(
+              'ABOUT ME',
+              style: TextStyle(
+                  fontFamily: 'Mulish',
+                  fontWeight: FontWeight.w100,
+                  color: Colors.white),
+            ),
+          ),
+        ],
+      ),
       backgroundColor: Color(0xffffffff),
       body: Column(
         children: [
-          Expanded(
-            flex: 1,
-            child: Container(
-              color: Color(0xff1c1c1c),
-              height: SizeConfig.blockSizeVertical * 10,
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Text(
-                        'SWB',
-                        style: TextStyle(
-                          fontFamily: 'Mulish',
-                          fontWeight: FontWeight.w100,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(flex: 3, child: SizedBox()),
-                  Expanded(
-                    flex: 1,
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Text(
-                        'HOME',
-                        style: TextStyle(
-                            fontFamily: 'Mulish',
-                            fontWeight: FontWeight.w100,
-                            color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Text(
-                        'ABOUT ME',
-                        style: TextStyle(
-                            fontFamily: 'Mulish',
-                            fontWeight: FontWeight.w100,
-                            color: Colors.white),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
           SizedBox(
             height: 20,
           ),
-          Expanded(
-            flex: 10,
+          Center(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Image.asset('seth_logo.png'),
