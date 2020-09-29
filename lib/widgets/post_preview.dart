@@ -1,3 +1,4 @@
+import 'package:blog/util/size_config.dart';
 import 'package:blog/widgets/markdown_displayer.dart';
 import 'package:blog/widgets/post_preview_title.dart';
 import 'package:flutter/material.dart';
@@ -12,20 +13,30 @@ class PostPreview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      borderOnForeground: true,
       elevation: 30,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SizedBox(
             height: 100,
           ),
-          PostPreviewTitle(this.title, this.datePosted),
-          MarkdownDisplayer(this.markDownFile),
-          Text(
-            'Continue Reading',
-            style: TextStyle(
-              fontFamily: 'Mulish',
-              fontWeight: FontWeight.w100,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 40),
+            child: PostPreviewTitle(this.title, this.datePosted),
+          ),
+          Expanded(
+            child: MarkdownDisplayer(this.markDownFile),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: Center(
+              child: Text(
+                'Continue Reading',
+                style: TextStyle(
+                  fontFamily: 'Mulish',
+                  fontWeight: FontWeight.w100,
+                ),
+              ),
             ),
           ),
         ],
