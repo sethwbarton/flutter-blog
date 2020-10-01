@@ -4,6 +4,7 @@ import '../util/size_config.dart';
 import '../widgets/footer.dart';
 import '../widgets/action_button.dart';
 import '../widgets/post_list.dart';
+import '../pages/post_view.dart';
 
 class LandingPage extends StatelessWidget {
   @override
@@ -14,11 +15,10 @@ class LandingPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Color(0xff1c1c1c),
-        leading: ActionButton('SWB'),
+        leading: ActionButton('SWB', LandingPage()),
         actions: [
-          ActionButton('HOME'),
-          ActionButton('BLOG'),
-          ActionButton('ABOUT ME'),
+          ActionButton('HOME', LandingPage()),
+          ActionButton('ABOUT ME', PostView('about_me.md')),
         ],
       ),
       backgroundColor: Color(0xffffffff),

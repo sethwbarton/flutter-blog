@@ -9,7 +9,6 @@ class PostList extends StatefulWidget {
 class _PostListState extends State<PostList> {
   List<Widget> _posts = [
     PostPreview('About Me', 'September 26, 2020', 'about_me.md'),
-    PostPreview('Test Post', 'September 26, 2020', 'simple_post.md'),
   ];
   final _controller = new PageController();
   static const _kDuration = const Duration(milliseconds: 300);

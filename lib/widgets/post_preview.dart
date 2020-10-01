@@ -3,6 +3,8 @@ import 'package:blog/widgets/markdown_displayer.dart';
 import 'package:blog/widgets/post_preview_title.dart';
 import 'package:flutter/material.dart';
 
+import "../pages/post_view.dart";
+
 class PostPreview extends StatelessWidget {
   String title;
   String datePosted;
@@ -27,9 +29,14 @@ class PostPreview extends StatelessWidget {
           Expanded(
             child: MarkdownDisplayer(this.markDownFile),
           ),
-          Padding(
-            padding: const EdgeInsets.all(18.0),
-            child: Center(
+          Center(
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => PostView(this.markDownFile)));
+              },
               child: Text(
                 'Continue Reading',
                 style: TextStyle(
