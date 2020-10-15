@@ -45,13 +45,3 @@ I can play guitar! I love the blues. My current favorite is [Chris "Kingfish" In
 Email: sethwbarton@gmail.com
 
 Phone: (480) 489-2671 (Be sure to leave a voicemail if I don't answer! Otherwise I'll think you're a robot.)
-
-​																					[<img align="center" alt="sethwbarton.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website] [<img align="center" alt="Seth Barton | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin] [<img align="center" alt="sethwbarton on Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />][github]
-
-
-
-
-
-[website]: https://sethwbarton.com
-[linkedin]: https://www.linkedin.com/in/seth-barton-828787156/
-[github]: https://github.com/sethwbarton
