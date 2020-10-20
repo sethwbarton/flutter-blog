@@ -44,4 +44,4 @@ I can play guitar! I love the blues. My current favorite is [Chris "Kingfish" In
 
 Email: sethwbarton@gmail.com
 
-Phone: (480) 489-2671 (Be sure to leave a voicemail if I don't answer! Otherwise I'll think you're a robot.)
+Phone: (480) 489-2671

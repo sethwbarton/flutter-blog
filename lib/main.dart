@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Blog',
+      title: 'sethwbarton',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
