@@ -15,7 +15,9 @@ class MarkdownDisplayer extends StatelessWidget {
           future: rootBundle.loadString("web/assets/posts/" + this.fileName),
           builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
             if (snapshot.hasData) {
-              return Markdown(data: snapshot.data);
+              return Markdown(
+                data: snapshot.data,
+              );
             }
             return Center(
               child: CircularProgressIndicator(),

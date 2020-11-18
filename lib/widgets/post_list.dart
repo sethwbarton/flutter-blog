@@ -10,6 +10,8 @@ class _PostListState extends State<PostList> {
   List<Widget> _posts = [
     PostPreview('About Me', 'September 26, 2020', 'about_me.md'),
     PostPreview('Plait', 'October 14, 2020', 'thoughts-on-plait.md'),
+    PostPreview('The Fellowship of The Ring - What I Learned',
+        'November 18, 2020', 'lotr_1.md'),
   ];
   final _controller = new PageController();
   static const _kDuration = const Duration(milliseconds: 300);

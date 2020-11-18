@@ -52,6 +52,7 @@ flutter:
     - web/assets/1984-Macintosh.png
     - web/assets/posts/about_me.md
     - web/assets/posts/thoughts-on-plait.md
+    - web/assets/posts/lotr_1.md
   fonts:
    - family: Mulish
      fonts:
