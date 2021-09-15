@@ -1,6 +1,9 @@
-# blog
+# Blog
 
 My Blog 2.0
+
+This is no longer the source code for sethwbarton.com but it was for a long time. I'm keeping it here in GitHub for the generations that come after me or to remind 
+myself of the kinds of things that I wrote. You should be able to start this code by following the instructions below. Or if you just want to read the articles I posted check out `web/assets/posts`.
 
 ## Getting Started
 
